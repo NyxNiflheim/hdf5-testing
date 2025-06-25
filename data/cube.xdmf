@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<Xdmf Version="3.0">
+  <Domain>
+    <Grid Name="Cube" GridType="Uniform">
+      <Topology TopologyType="3DCORECTMesh" Dimensions="9 9 9"/>
+      <Geometry GeometryType="ORIGIN_DXDYDZ">
+        <DataItem Format="XML" NumberType="Float" Precision="8" Dimensions="3">0 0 0</DataItem>
+        <DataItem Format="XML" NumberType="Float" Precision="8" Dimensions="3">1 1 1</DataItem>
+      </Geometry>
+      <Attribute Name="pressure" Center="Node">
+        <DataItem Format="HDF" NumberType="Float" Precision="8" Dimensions="8 8 8">
+          cube.h5:/pressure
+        </DataItem>
+      </Attribute>
+    </Grid>
+  </Domain>
+</Xdmf>
