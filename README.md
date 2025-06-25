@@ -34,24 +34,6 @@ test-hdf5/
 └── README.md # ← You are here
 
 
----
-
-##  Building
-
-You must have:
-- C++ compiler with MPI support (e.g., `mpicxx`)
-- HDF5 with parallel support (`hdf5parallel` module)
-- CMake ≥ 3.10
-
-## Example on Cirrus:
-
-module load hdf5parallel/1.14.3-gcc10-ompi416
-mkdir build && cd build
-cmake ..
-make -j
-
-If your HDF5 or MPI paths are not detected, you may need to specify them manually:
-cmake -DHDF5_ROOT=/path/to/hdf5 -DMPI_HOME=/path/to/mpi ..
 
 ##   Running the Test
 mkdir build 
