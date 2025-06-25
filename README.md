@@ -11,8 +11,6 @@ HemeLB is a parallel lattice-Boltzmann blood flow simulator used in biomedical r
 
 This project explores the use of **HDF5**, a widely adopted scientific data format, to improve:
 
-- I/O performance
-- Ease of post-processing
 - Compatibility with tools like **ParaView** (via `.xdmf`).
 
 ---
